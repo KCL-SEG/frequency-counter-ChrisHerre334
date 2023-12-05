@@ -10,6 +10,8 @@ def frequencies(items):
         # Deal with non-string items
         if not isinstance(item, str):
             key = str(item)
+        else:
+            key = item
 
         # Look to next key and add current key to dictionary
         frequencies[key] = frequencies.get(key, 0) + 1
